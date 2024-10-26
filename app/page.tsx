@@ -73,25 +73,25 @@ export default function Home() {
 
           <h3>How to Implement an SMS API</h3>
           <p>
-            Most SMS APIs offer simple integration methods via REST APIs. Here's a basic example:
+            Most SMS APIs offer simple integration methods via REST APIs. Here&apos;s a basic example:
           </p>
           <pre>
             <code className="language-js">
-              {`const axios = require('axios');
+              {`const axios = require(&apos;axios&apos;);
 
               const sendSMS = async () => {
                 try {
-                  const response = await axios.post('https://sent.dm/send', {
-                    to: '+1234567890',
-                    message: 'Hello from your API!'
+                  const response = await axios.post(&apos;https://sent.dm/send&apos;, {
+                    to: &apos;+1234567890&apos;,
+                    message: &apos;Hello from your API!&apos;
                   }, {
                     headers: {
-                      'Authorization': 'Bearer your-api-token'
+                      &apos;Authorization&apos;: &apos;Bearer your-api-token&apos;
                     }
                   });
                   console.log(response.data);
                 } catch (error) {
-                  console.error('Error sending SMS:', error);
+                  console.error(&apos;Error sending SMS:&apos;, error);
                 }
               };
 
